@@ -1,0 +1,12 @@
+message Persona {
+  required int32  id    = 1;
+  required string name  = 2;
+  optional string email = 3;
+  repeated string likes = 4;
+  optional Address address = 5;
+}
+
+message Address {
+  required string street = 1;
+  required string postCode = 2;
+}

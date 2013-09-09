@@ -3,10 +3,12 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :plugins [[lein-cljsbuild "0.2.7"]]
+  :plugins [[lein-cljsbuild "0.2.7"]
+            [lein-protobuf "0.3.1"]]
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-1450"]
                  [org.clojure/clojure-contrib "1.2.0"]
+                 [org.flatland/protobuf "0.7.2"]
                  ]
   :cljsbuild {
         :builds [{
