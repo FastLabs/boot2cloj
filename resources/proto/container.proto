@@ -1,0 +1,17 @@
+package OB;
+
+option java_package = "zorg";
+option java_multiple_files = true;
+
+import "person.proto";
+
+message PersonMessage {
+
+  enum Sex {
+    MALE   = 1;
+    FEMALE = 2;
+  }
+
+  required Sex sex = 1;
+  optional Persona persona = 2;
+}

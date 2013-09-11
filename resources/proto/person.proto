@@ -1,7 +1,12 @@
+package OB;
+
+option java_package = "zorg";
+option java_multiple_files = true;
+
 message Persona {
   required int32  id    = 1;
   required string name  = 2;
-  optional string email = 3;
+
   repeated string likes = 4;
   optional Address address = 5;
 }
@@ -9,4 +14,10 @@ message Persona {
 message Address {
   required string street = 1;
   required string postCode = 2;
+  optional Telephone telephone = 3;
+}
+
+message Telephone {
+  optional string area = 1;
+  optional string phone = 2;
 }
