@@ -13,5 +13,6 @@ message PersonMessage {
   }
 
   required Sex sex = 1;
-  optional Persona persona = 2;
+  optional OB.Persona persona = 2;
+  optional OB.Family myFamily = 3;
 }

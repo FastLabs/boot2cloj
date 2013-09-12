@@ -13,11 +13,15 @@ message Persona {
 
 message Address {
   required string street = 1;
-  required string postCode = 2;
-  optional Telephone telephone = 3;
+  required string postcode = 2;
+  repeated Telephone telephone = 3;
 }
 
 message Telephone {
   optional string area = 1;
   optional string phone = 2;
+}
+
+message Family {
+  optional string name = 1;
 }
