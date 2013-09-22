@@ -1,0 +1,24 @@
+(import zorg.Person )
+(import zorg.Address)
+(import com.google.protobuf.TextFormat)
+
+
+;;(def f (File. ""))
+(def x (Address/newBuilder ))
+(.setStreet x "unu")
+(.setPostcode x "code")
+
+(def y (.build x))
+(.getStreet y)
+(.getPostcode y)
+
+(instance? Address y)
+
+(def st (TextFormat/printToString y))
+(def newB (Address/newBuilder))
+(TextFormat/merge st newB)
+(def a (.build newB))
+(.getStreet a)
+
+
+(prn st)
