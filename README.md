@@ -1,10 +1,6 @@
 # boot2cloj
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+FIXME: Yet in Draft but this is the first attempt of learning Clojure, prefer to do it on a real example. The idea is to build a virtual repository for protobuf files and some query posibilities for the protobuf model
 
 ## Usage
 
@@ -27,9 +23,3 @@ FIXME: listing of options this app accepts.
 ### Any Other Sections
 ### That You Think
 ### Might be Useful
-
-## License
-
-Copyright © 2013 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
