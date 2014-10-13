@@ -1,4 +1,11 @@
-<doc>
-  <header id="1">Header doc</header>
-  <author>Oleg Bulavitchi</author>
-</doc>
+<docs>
+    <sch:doc>
+        <header id="1">Header doc</header>
+        <author>Oleg Bulavitchi</author>
+    </sch:doc>
+
+    <sch:doc>
+        <header id="2">Header doc</header>
+        <author>Lina Bulavitchi</author>
+    </sch:doc>
+</docs>
