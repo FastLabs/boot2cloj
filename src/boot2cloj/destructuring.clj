@@ -1,5 +1,7 @@
+(ns destruct)
 
 (def x [1 2 3 4 {:a "unu" :b "doi"}])
+
 ;;vector destructuring
 (let [[x y _ _ mapa] x] (+ x y) mapa)
 (let [[x & rst] x] rst)
