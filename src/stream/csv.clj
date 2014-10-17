@@ -10,8 +10,5 @@
 (defn csv-decoder [receiver]
   (let [header (atom [])]
     (fn [line]
-      (let [first-line @header]
-        (if (= 0 (count first-line))
-          (swap! header (fn [_] (map keyword line)))
-          (receiver (zipmap first-line line)) ))))
-  )
+      (when-not (compare-and-set! header [] line)
+        (receiver (zipmap @header line))))))
