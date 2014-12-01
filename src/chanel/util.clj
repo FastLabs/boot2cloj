@@ -3,5 +3,6 @@
 
 (defn dry-chanel [pipe consumer]
   (loop [line (async/<!! pipe)]
-    (when (not (nil? line)) (apply consumer [line]) (recur (async/<!! pipe))))
+    (when (not (nil? line)) (apply consumer [line])
+                            (recur (async/<!! pipe))))
   )
