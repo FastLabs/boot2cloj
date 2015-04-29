@@ -8,12 +8,13 @@
              ;;  [lein-protobuf "0.3.1"]
              ]
 
-  :dependencies [[org.clojure/clojure "1.6.0"]
+  :dependencies [[org.clojure/clojure "1.7.0-beta2"]
                  ;;[org.clojure/clojurescript "0.0-1450"]
                  [org.clojure/clojure-contrib "1.2.0"]
                  [org.clojure/data.csv "0.1.2" ]
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  ;;[org.flatland/protobuf "0.7.2"]
+                 [org.clojure/test.check "0.8.0-ALPHA"]
                  ]
   :cljsbuild {
         :builds [{
